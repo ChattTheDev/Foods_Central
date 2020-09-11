@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#EF9F80</item>
+        <item name="colorPrimaryDark">#F45830</item>
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

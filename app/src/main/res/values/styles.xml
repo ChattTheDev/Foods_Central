@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#EF9F80</item>
+        <item name="colorPrimaryDark">#F45830</item>
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+        <item name="fontFamily">@font/quicksand</item>
+    </style>
+
+    <style name="MtButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreenButtonThemeOverlay</item>
+    </style>
+
+    <style name="GreenButtonThemeOverlay">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="elevation">10dp</item>
+        <item name="android:shadowColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="fontFamily">@font/quicksand</item>
+    </style>
+
+    <style name="TextAppearance.MaterialComponents.Caption" parent="Theme.MaterialComponents">
+        <item name="fontFamily">@font/quicksand</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">27sp</item>
+    </style>
+    <style name="Toolbar.TitleText2" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.chattthedev.foodscentral"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.karumi:dexter:6.2.1'
+    implementation 'com.github.toanvc:floatingactionmenu:0.8.9'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.firebaseui:firebase-ui-database:6.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.andremion:counterfab:1.2.2'
+    implementation 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'com.github.florent37:expansionpanel:1.2.4'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.Restaurant_Details_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/Toolbar.TitleText2"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@style/Toolbar.TitleText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Restaurant Details">
+
+            <ImageView
+                android:id="@+id/resimagepd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cdopyaja"
+                android:transitionName="respicture"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Toolbar.TitleText2" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling" />
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/firstfloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_shopping_cart"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_anchor="@id/toolbar_layout"
+        app:layout_anchorGravity="bottom|end"
+        app:rippleColor="#000000"
+        app:tint="@android:color/white"
+        app:badgePosition="RightBottom"
+        app:badgeBackgroundColor="@android:color/holo_red_dark"
+        app:badgeTextColor="@android:color/white"/>
+
+    <com.andremion.counterfab.CounterFab
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/ic_baseline_person_pin"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_anchor="@id/toolbar_layout"
+        app:layout_anchorGravity="bottom|right"
+        app:rippleColor="#000000"
+        app:tint="@android:color/white" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091692755996",
+    "firebase_url": "https://foods-central-aaa49.firebaseio.com",
+    "project_id": "foods-central-aaa49",
+    "storage_bucket": "foods-central-aaa49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091692755996:android:66abeda3fcbdf5250db3d9",
+        "android_client_info": {
+          "package_name": "com.chattthedev.foodscentral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091692755996-rpnea7rq80blaj0aqepdgpcdfkc1ui96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chattthedev.foodscentral",
+            "certificate_hash": "d76ca4180bb13acac2f2bd5249c4a8d50d7e4dd9"
+          }
+        },
+        {
+          "client_id": "1091692755996-155987c33hte6u78p1sknujt5j7v00th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3dMUuXpW06ih8PGsGXw7FqxuS8Ze-reo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091692755996-155987c33hte6u78p1sknujt5j7v00th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

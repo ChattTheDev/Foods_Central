@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linearbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomapbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="7dp"
+        app:fabCradleRoundedCornerRadius="100dp"
+        app:hideOnScroll="true"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            app:menu="@menu/bottommenu"
+            app:itemIconTint="@drawable/tab_color"
+            app:labelVisibilityMode="labeled"
+            app:itemTextColor="@drawable/tab_color"
+            android:theme="@style/TextAppearance.MaterialComponents.Caption"
+            android:id="@+id/bottomnavigationview"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_baseline_home"
+        app:layout_anchor="@id/bottomapbar"
+        app:maxImageSize="40dp"
+        app:tint="@color/colorPrimaryDark"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
